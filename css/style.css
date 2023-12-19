@@ -1,0 +1,356 @@
+/* MOBILE FIRST */
+    
+/****GENERAL****/
+  
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --third-color: #99E2D0;
+    --main-bg-color: #FFFFFF;
+
+}
+    
+.fa-location-dot {
+    color:#353535;
+}
+
+
+.fa-utensils, .fa-handshake-angle {
+    color: white;
+    margin-right: 8px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 767.98px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.homepage__title {
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    width: 280px;
+    height: 68px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.section__title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    margin: 70px 0px 20px 35px;
+}
+
+.footer-title {
+    font-family: 'Shrikhand';
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    margin-left: 15px;
+}
+
+.button-principal {
+    width: 250px;
+    height: 65px;
+    border-radius: 40px;
+    border-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+
+    font-weight: 600;
+    font-size: 18px;
+   
+    background: linear-gradient(to top, var(--main-color), var(--second-color));
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-content {
+    color: white;
+}
+
+/****HEADER****/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    
+.header-logo {
+    width: 197px;
+    height: 36px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+    
+.header-localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #EAEAEA;
+}
+
+.localisation {
+    padding: 20px;
+}
+
+
+
+
+/****SECTION RESERVATION****/
+
+.reservation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#F6F6F6;
+    
+}
+
+.infos {
+    font-size: 18px;
+    font-weight: 300;
+    width: 315px;
+    height: 46px;    
+    text-align: center;
+    align-self: center;
+}
+
+/****SECTION FONCTIONNEMENT****/
+
+.fonction {
+    width: 100%;
+    height: 440px;
+    justify-content: space-between;
+}
+
+.ensemble-fonction-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.fonction-button {
+    background-color: #F6F6F6;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    border-style: none;
+    width: 75%;
+    height: 72.38px;
+    margin-left: 33px;
+    border-radius: 20px;    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.numerotation {
+    background-color: var(--main-color);
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;    
+    margin: 20px 0px 0px 18px;
+}
+
+.numerotation-chiffre {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 17px;
+    display: flex;
+    margin: auto;
+
+}
+
+.fa-store {
+    color: var(--main-color);
+}
+
+.fa-list-ul, .fa-mobile-screen-button {
+    color: #7E7E7E;
+}
+
+/****SECTION RESTAURANTS****/
+
+.restaurants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
+
+.card {
+    width: 85%;
+    height: 280px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.restaurants-card {
+    width: 100%;
+
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+
+}
+
+.card-title {
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+.card-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 8px;
+
+}
+
+.card-new {
+    width: 80px;
+    height: 29px;
+    border-radius: 5px;
+    background-color:#99E2D0;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 70%;
+
+}
+
+.card-new-content {
+    color: #008766;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    margin: 6px 0px 0px 10px;
+
+}
+
+/****FOOTER****/
+
+.footer {
+    width: 100%;
+    background-color: #353535;
+    flex-direction: column;
+    display: flex;
+}
+
+.footer-categorie {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px 0px 15px 15px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-categorie i {
+    margin-right: 10px;
+}
+
+
+/* Version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media only screen and (min-width: 768px) {
+
+    .main-container {
+        max-width: 1024px;
+    }
+
+    .header{
+        width: 100%;
+        
+    }
+
+    .reservation {
+        width: 100%;
+        height: 250px
+        
+    }
+
+    .homepage__title {
+        width: 645px;
+        justify-content: center;
+        
+    }
+
+    .infos {
+        width: 645px;
+    }
+
+    .fonction {
+        width: 100%;
+        
+    }
+
+    
+    .restaurants-card {
+        display-grid :
+    }
+
+    .footer {
+        width: 100%;
+        align-items: flex-end;
+
+    }
+
+    .footer-categorie {
+        flex-direction: row;
+        
+        
+    }
+
+  
+}
+
+/* Media query pour plus larges, par exemple desktop */
+@media screen and (max-width: 1440px) {
+
+}
