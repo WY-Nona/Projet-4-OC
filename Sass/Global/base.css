@@ -1,0 +1,15 @@
+.body {
+  width: 100%;
+  margin: auto;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/**** font weight ****//*# sourceMappingURL=base.css.map */

@@ -1,0 +1,71 @@
+.footer{
+    width: 100%;
+    padding: 22px 25px;
+    background-color: darken(white, $amount: 75%);
+    color: white;
+
+    @media(min-width: 768px ){
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        height: 114px;
+        gap: 16px;
+        padding: 0;
+    }
+
+    & p{
+        margin: 5px 0;
+    }
+
+    &__logo{
+        margin: 0 0 16px 0;
+        font-size: 18px;
+
+        @media(min-width: 768px ){
+            width: 137px;
+            margin: 0 0 -50px 0;
+        }
+    }
+
+    &__bloc{
+        display: flex;
+        flex-direction: column;
+
+        @media(min-width: 768px ){
+            flex-direction: row;
+            align-items: center;
+            gap: 7px;
+            margin: 0 0 -50px 0;
+        }
+    }
+
+    &__lien{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        gap: 7px;
+
+        @media(min-width: 768px ){
+            width: 190px;
+        }
+
+         &--icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 13px;
+            font-size: 13px;
+        }
+
+        &--inf{
+            @media(min-width: 768px ){
+                & p{
+                    width: 130px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
