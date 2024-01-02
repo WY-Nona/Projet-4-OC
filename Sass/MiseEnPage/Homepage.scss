@@ -1,3 +1,4 @@
+/*GPS*/
 
 .gps{
     display: flex;
@@ -62,7 +63,7 @@
         height: 50px;
         color: white;
         font-size: 16px;
-        background: linear-gradient( to top, $purple, $pink);
+        background: linear-gradient(to top, #9356DC, #FF79DA);
         border-radius: 25px;
         border: none;
         font-weight: 300;
@@ -71,6 +72,8 @@
      
      &__degrade:hover{
         cursor: pointer;
+        box-shadow: #7E7E7E;
+        background-color: lighter;
      }
     
 }
@@ -78,15 +81,15 @@
 /*FONCTIONNEMENT*/
 
 .fonction {
-    width: $widhtmobile;
+    width: 90%;
     margin: auto;
     padding: 50px 0;
 
     &__titre{
         margin:10px 0;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 1;
-        font-weight: bold;
+        font-weight: 800;
     }
 
     &__boutons{
@@ -133,7 +136,7 @@
         width: 24px;
         border-radius: 50%;
         color: white;
-        background-color: $purple;
+        background-color: #9356DC;
         padding: 1%;
      }
 
@@ -146,18 +149,18 @@
      }
 
      &--soustitre{
-        width: 211px;
-        height: 15px;
+        display: flex;
+        justify-content: center;
         font-weight: 600;
      }
 
      &:hover{
-        background-color: lighten($purple, 35%);
+        background-color: lighten (#9356DC, 35%);
         box-shadow:  0 10px 5px 0 darken($color: #d5d5d5, $amount: 10%);
         cursor: pointer;
 
         &>.fonction__box--icon{
-            color: $purple;
+            color: #9356DC;
         }
      }
 
@@ -174,15 +177,15 @@
     background-color: whitesmoke;
 
     &__titre{
-        width: $widhtmobile;
+        width: 90%;
         margin: 20px auto;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 1;
-        font-weight: bold;
+        font-weight: 800;
     }
 
     &__bloc{
-        width: $widhtmobile;
+        width: 90%;
         margin: auto;
         
 
@@ -202,7 +205,7 @@
     margin: auto;
     margin-bottom: 18px;
     border-radius: 15px;
-    background-color: $white;
+    background-color: #FFFF;
     box-shadow: 0 4px 10px 0 #d5d5d5;
     
 
@@ -235,11 +238,11 @@
             position: absolute;
             right: 15px;
             top: 12px;
-            width: 80px;
+            width: 100px;
             height: 30px;
             border-radius: 2px;
-            background-color: $light-grey;
-            color: darken($light-grey, 40%);
+            background-color: #99E2D0;
+            color: darken(#99E2D0, 40%);
             font-weight: 500;
         }
     }
@@ -263,13 +266,14 @@
         width: 267px;
         height: 20px;
         margin-bottom: 5px;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 700;
        }
 
        & p{
         height: 24px;
         font-weight: 300;
-        font-size: 17px;
+        font-size: 18px;
        }
     }
 

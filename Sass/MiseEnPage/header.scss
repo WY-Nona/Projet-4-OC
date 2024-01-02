@@ -1,5 +1,5 @@
 .header{
-    padding: 0%;
+    padding: 1%;
     display: flex;
     justify-content: center;
     
@@ -12,6 +12,13 @@
         width: 20%;
 
         }
+    }
+
+    &__fleche {
+        display: flex;
+        position: absolute;
+        margin-left: -110px;
+        margin-top: 25px;
     }
 
 }

@@ -1,5 +1,5 @@
 .header {
-  padding: 0%;
+  padding: 1%;
   display: flex;
   justify-content: center;
 }
@@ -11,4 +11,10 @@
   .header__logo {
     width: 20%;
   }
+}
+.header__fleche {
+  display: flex;
+  position: absolute;
+  margin-left: -110px;
+  margin-top: 25px;
 }/*# sourceMappingURL=header.css.map */

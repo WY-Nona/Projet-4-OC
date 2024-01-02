@@ -1,0 +1,163 @@
+.menu__img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+@media (min-width: 1024px) {
+  .menu__img {
+    height: 400px;
+  }
+}
+.menu__img img {
+  width: 100%;
+  height: 107%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__page {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 25px 25px 0 0;
+  padding: 2% 5% 5% 5%;
+  z-index: 0;
+}
+@media (min-width: 1024px) {
+  .menu__page {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+.menu__page__titre {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .menu__page__titre {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+}
+.menu__page__titre h2 {
+  width: 87%;
+  font-size: 27px;
+  font-family: "Shrikhand";
+}
+@media (min-width: 768px) {
+  .menu__page__titre h2 {
+    display: flex;
+    font-size: 35px;
+    width: 95%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__page__titre h2 {
+    display: flex;
+    font-size: 39px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__conteneur {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.menu__commander {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__liste {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .menu__liste {
+    width: 100%;
+  }
+}
+
+.menu__titre__plat {
+  position: relative;
+  margin: 4% 0 2% 0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #99E2D0;
+  text-underline-position: under;
+  text-decoration-thickness: 3px;
+}
+@media (min-width: 1024px) {
+  .menu__titre__plat {
+    font-size: 22px;
+  }
+}
+
+.menu__card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu__card__inf {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2%;
+  gap: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 5px;
+}
+.menu__card__desc h4 {
+  margin: 0;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__desc p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__prix {
+  display: flex;
+  align-items: flex-end;
+  width: 15%;
+  padding: 5px;
+}
+.menu__card__prix p {
+  margin: 0;
+  font-weight: 700;
+}/*# sourceMappingURL=Menu.css.map */

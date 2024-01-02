@@ -6,15 +6,16 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    --main-purple: #9356DC;
+    --main-pink: #FF79DA;
+    --main-palegreen: #99E2D0;
+    --main-darkgreen: #008766;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
-/**** font weight ****/
-$font-weight: (
-    light: 300,
-    regular: 400,
-    medium: 500,
-    bold: 700,
-);
 
