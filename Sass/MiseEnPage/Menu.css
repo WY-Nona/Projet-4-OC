@@ -94,10 +94,15 @@
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: #99E2D0;
-  text-underline-position: under;
-  text-decoration-thickness: 3px;
+}
+.menu__titre__plat::after {
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #99E2D0;
 }
 @media (min-width: 1024px) {
   .menu__titre__plat {
@@ -160,4 +165,31 @@
 .menu__card__prix p {
   margin: 0;
   font-weight: 700;
+}
+.menu__card:hover > .menu__card__check {
+  margin-right: 0px;
+}
+.menu__card:hover > .menu__card__check::after {
+  transform: rotate(360deg);
+}
+.menu__card__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 20%;
+  margin-right: -20%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  transition: margin-right 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+.menu__card__check::after {
+  display: inline-block;
+  margin: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  content: "\f058";
+  color: #fff;
+  transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }/*# sourceMappingURL=Menu.css.map */

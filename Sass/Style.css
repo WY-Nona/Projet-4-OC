@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .body {
   width: 100%;
   margin: auto;
@@ -462,10 +463,15 @@ a {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: #99E2D0;
-  text-underline-position: under;
-  text-decoration-thickness: 3px;
+}
+.menu__titre__plat::after {
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #99E2D0;
 }
 @media (min-width: 1024px) {
   .menu__titre__plat {
@@ -528,6 +534,33 @@ a {
 .menu__card__prix p {
   margin: 0;
   font-weight: 700;
+}
+.menu__card:hover > .menu__card__check {
+  margin-right: 0px;
+}
+.menu__card:hover > .menu__card__check::after {
+  transform: rotate(360deg);
+}
+.menu__card__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 20%;
+  margin-right: -20%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  transition: margin-right 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+.menu__card__check::after {
+  display: inline-block;
+  margin: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  content: "\f058";
+  color: #fff;
+  transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }
 
 /****COEUR REMPLISSAGE****/
@@ -592,4 +625,79 @@ a {
   -webkit-text-stroke: 1px;
 }
 
-/****APPARITION MENU****//*# sourceMappingURL=Style.css.map */
+/****APPARITION MENU****/
+@keyframes fade-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  }
+}
+.fade-in {
+  transform-origin: top;
+  animation: fade-in 2s forwards;
+}
+.fade-in--1delay {
+  animation: fade-in 2s 500ms both;
+}
+.fade-in--2delay {
+  animation: fade-in 2s 1000ms both;
+}
+
+/* CSS pour les éléments d'entrée */
+.menu__list:nth-child(1) .menu__card {
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de plat */
+.menu__list:nth-child(2) .menu__card {
+  animation: appearPlat 5.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de dessert */
+.menu__list:nth-child(3) .menu__card {
+  animation: appearDessert 9.5s ease forwards;
+  opacity: 0;
+}
+
+/* Animation pour les éléments d'entrée */
+@keyframes appearEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de plat */
+@keyframes appearPlat {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de dessert */
+@keyframes appearDessert {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Style.css.map */
