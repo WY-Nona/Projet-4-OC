@@ -60,8 +60,9 @@
 }
 .bouton__degrade:hover {
   cursor: pointer;
-  box-shadow: #7E7E7E;
-  background-color: lighter;
+  box-shadow: 0 4px 10px 0 #7E7E7E;
+  transition: opacity 300ms ease-in-out;
+  background: #9356dc;
 }
 
 /*FONCTIONNEMENT*/
