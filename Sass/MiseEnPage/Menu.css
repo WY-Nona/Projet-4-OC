@@ -55,7 +55,7 @@
 @media (min-width: 1024px) {
   .menu__page__titre h2 {
     display: flex;
-    font-size: 39px;
+    font-size: 36px;
     width: 95%;
     margin: auto;
     text-align: center;
@@ -168,9 +168,6 @@
 }
 .menu__card:hover > .menu__card__check {
   margin-right: 0px;
-}
-.menu__card:hover > .menu__card__check::after {
-  transform: rotate(360deg);
 }
 .menu__card__check {
   display: flex;

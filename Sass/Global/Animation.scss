@@ -68,89 +68,62 @@
         transform-origin: bottom;
         -webkit-text-stroke: 1px;
     }
+
+    @media(min-width: 1024px) {
+      display: flex;
+        }
 }
 
 /****APPARITION MENU****/
-
-@keyframes fade-in {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    75% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(0);
-        animation-timing-function: cubic-bezier(.17, .67, .83, .67);
-    }
+.menu__liste:nth-child(1) .menu__card{
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
 }
 
-.fade-in {
-    transform-origin: top;
-    animation: fade-in 2s forwards;
-
-    &--1delay {
-        animation: fade-in 2s 500ms both;
-    }
-
-    &--2delay {
-        animation: fade-in 2s 1000ms both;
-    }
+.menu__liste:nth-child(2) .menu__card{
+  animation: appearPlat 5.5s ease forwards;
+  opacity: 0;
 }
 
-/* CSS pour les éléments d'entrée */
-.menu__list:nth-child(1) .menu__card {
-    animation: appearEntrance 1.5s ease forwards;
+
+.menu__liste:nth-child(3) .menu__card{
+  animation: appearDessert 9.5s ease forwards;
+  opacity: 0;
+}
+
+
+/*animationentrée*/
+@keyframes appearEntrance {
+  0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* CSS pour les éléments de plat */
-  .menu__list:nth-child(2) .menu__card {
-    animation: appearPlat 5.5s ease forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*animationplat*/
+@keyframes appearPlat {
+  0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* CSS pour les éléments de dessert */
-  .menu__list:nth-child(3) .menu__card {
-    animation: appearDessert 9.5s ease forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*animationdessert*/
+@keyframes appearDessert {
+  0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* Animation pour les éléments d'entrée */
-  @keyframes appearEntrance {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Animation pour les éléments de plat */
-  @keyframes appearPlat {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Animation pour les éléments de dessert */
-  @keyframes appearDessert {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}

@@ -70,21 +70,20 @@ a {
   font-weight: lighter;
 }
 .bouton__degrade {
-  width: 218px;
-  height: 50px;
+  width: 260px;
+  height: 55px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 25px;
   border: none;
-  font-weight: 300;
+  font-weight: 500;
   margin: 27px 75px 57px 82px;
 }
 .bouton__degrade:hover {
   cursor: pointer;
   box-shadow: 0 4px 10px 0 #7E7E7E;
-  transition: opacity 300ms ease-in-out;
-  background: #9356dc;
+  opacity: 0.8;
 }
 
 /*FONCTIONNEMENT*/
@@ -424,7 +423,7 @@ a {
 @media (min-width: 1024px) {
   .menu__page__titre h2 {
     display: flex;
-    font-size: 39px;
+    font-size: 36px;
     width: 95%;
     margin: auto;
     text-align: center;
@@ -538,9 +537,6 @@ a {
 .menu__card:hover > .menu__card__check {
   margin-right: 0px;
 }
-.menu__card:hover > .menu__card__check::after {
-  transform: rotate(360deg);
-}
 .menu__card__check {
   display: flex;
   align-items: center;
@@ -624,51 +620,29 @@ a {
   transform-origin: bottom;
   -webkit-text-stroke: 1px;
 }
+@media (min-width: 1024px) {
+  .bouton__coeur {
+    display: flex;
+  }
+}
 
 /****APPARITION MENU****/
-@keyframes fade-in {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  }
-}
-.fade-in {
-  transform-origin: top;
-  animation: fade-in 2s forwards;
-}
-.fade-in--1delay {
-  animation: fade-in 2s 500ms both;
-}
-.fade-in--2delay {
-  animation: fade-in 2s 1000ms both;
-}
-
-/* CSS pour les éléments d'entrée */
-.menu__list:nth-child(1) .menu__card {
+.menu__liste:nth-child(1) .menu__card {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
 }
 
-/* CSS pour les éléments de plat */
-.menu__list:nth-child(2) .menu__card {
+.menu__liste:nth-child(2) .menu__card {
   animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
-/* CSS pour les éléments de dessert */
-.menu__list:nth-child(3) .menu__card {
+.menu__liste:nth-child(3) .menu__card {
   animation: appearDessert 9.5s ease forwards;
   opacity: 0;
 }
 
-/* Animation pour les éléments d'entrée */
+/*animationentrée*/
 @keyframes appearEntrance {
   0% {
     opacity: 0;
@@ -679,7 +653,7 @@ a {
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de plat */
+/*animationplat*/
 @keyframes appearPlat {
   0% {
     opacity: 0;
@@ -690,7 +664,7 @@ a {
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de dessert */
+/*animationdessert*/
 @keyframes appearDessert {
   0% {
     opacity: 0;

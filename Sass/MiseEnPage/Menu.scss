@@ -52,7 +52,7 @@
 
             @media(min-width: 1024px){
                 display: flex;
-                font-size: 39px;
+                font-size: 36px;
                 width: 95%;
                 margin: auto;
                 text-align: center;
@@ -179,9 +179,6 @@
     &:hover>&__check {
         margin-right: 0px;
 
-        &::after {
-            transform: rotate(360deg);
-        }
     }
 
     &__check {

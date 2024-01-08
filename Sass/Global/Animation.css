@@ -60,51 +60,29 @@
   transform-origin: bottom;
   -webkit-text-stroke: 1px;
 }
+@media (min-width: 1024px) {
+  .bouton__coeur {
+    display: flex;
+  }
+}
 
 /****APPARITION MENU****/
-@keyframes fade-in {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  }
-}
-.fade-in {
-  transform-origin: top;
-  animation: fade-in 2s forwards;
-}
-.fade-in--1delay {
-  animation: fade-in 2s 500ms both;
-}
-.fade-in--2delay {
-  animation: fade-in 2s 1000ms both;
-}
-
-/* CSS pour les éléments d'entrée */
-.menu__list:nth-child(1) .menu__card {
+.menu__liste:nth-child(1) .menu__card {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
 }
 
-/* CSS pour les éléments de plat */
-.menu__list:nth-child(2) .menu__card {
+.menu__liste:nth-child(2) .menu__card {
   animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
-/* CSS pour les éléments de dessert */
-.menu__list:nth-child(3) .menu__card {
+.menu__liste:nth-child(3) .menu__card {
   animation: appearDessert 9.5s ease forwards;
   opacity: 0;
 }
 
-/* Animation pour les éléments d'entrée */
+/*animationentrée*/
 @keyframes appearEntrance {
   0% {
     opacity: 0;
@@ -115,7 +93,7 @@
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de plat */
+/*animationplat*/
 @keyframes appearPlat {
   0% {
     opacity: 0;
@@ -126,7 +104,7 @@
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de dessert */
+/*animationdessert*/
 @keyframes appearDessert {
   0% {
     opacity: 0;
