@@ -13,8 +13,21 @@
   }
 }
 .header__fleche {
-  display: flex;
   position: absolute;
-  margin-left: -110px;
-  margin-top: 25px;
+  left: 25px;
+  padding-top: 17px;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  .header__fleche {
+    left: 70px;
+    padding-top: 29px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__fleche {
+    padding-top: 19px;
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=header.css.map */
