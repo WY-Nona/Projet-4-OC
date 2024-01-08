@@ -82,7 +82,7 @@
   opacity: 0;
 }
 
-/*animationentrée*/
+/*Entrées*/
 @keyframes appearEntrance {
   0% {
     opacity: 0;
@@ -93,7 +93,7 @@
     transform: translateY(0);
   }
 }
-/*animationplat*/
+/*Plats*/
 @keyframes appearPlat {
   0% {
     opacity: 0;
@@ -104,7 +104,7 @@
     transform: translateY(0);
   }
 }
-/*animationdessert*/
+/*Desserts*/
 @keyframes appearDessert {
   0% {
     opacity: 0;
@@ -113,5 +113,107 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/***LOADER***/
+.loader-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.95;
+  animation: loader-appear 4s both ease-in-out;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  min-width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: linear-gradient(#9356dc, #99E2D0);
+  z-index: 0;
+  animation: rotate-gradient 3s infinite;
+}
+.loader::after {
+  z-index: 0;
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background: linear-gradient #99E2D0, white 40%;
+  border-radius: 50%;
+  animation: rotate-gradiant 3s infinite;
+}
+.loader__border {
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+}
+.loader__design {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 125px;
+  background-color: white;
+  margin: 0% 2%;
+  border-radius: 50%;
+  z-index: 3;
+}
+.loader__design::before {
+  position: absolute;
+  display: flex;
+  width: 93%;
+  height: 93%;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: rotate(-25deg);
+  overflow: hidden;
+}
+.loader__design__shrimp {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: auto;
+  z-index: 6;
+  opacity: 1;
+}
+.loader__design__shrimp i {
+  color: #99E2D0;
+  font-size: 60px;
+}
+
+@keyframes loader-appear {
+  50% {
+    opacity: 0.95;
+  }
+  99% {
+    z-index: 21;
+  }
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+@keyframes rotate-gradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }/*# sourceMappingURL=Animation.css.map */
